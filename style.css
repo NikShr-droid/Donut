@@ -1,0 +1,62 @@
+:root{
+    --bg-color: #000;
+    --text-color: #fff;
+    --but-bg-color: #28282d;
+}
+
+[data-theme="white"]{
+    --bg-color: #dbd4d4;
+    --text-color: #000;
+    --but-bg-color: #c2c2d2;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    height: 100vh;
+    overflow: hidden;
+}
+
+pre{
+    font-family: monospace;
+    font-size: 10px;
+}
+
+.donut-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100% ;
+}    
+
+.theme-switch{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: var(--but-bg-color);
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.theme-switch button{
+    
+    background-color: var(--but-bg-color);
+    color: var(--text-color);
+}
+
+
+
+.theme-switch .menu {
+    display: none;
+}
+.theme-switch.open .menu {
+    display: block;
+}
+.theme-switch .toggle {
+    cursor: pointer;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+}
