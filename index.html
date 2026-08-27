@@ -12,13 +12,16 @@
         <pre id="donut"></pre>
     </div>
 
-    <!-- <div class="theme-switch" id="themeSwitcher">
-        <button  class="toggle" onclick="toggleMenu()">Themes</button>
-        <div class="menu">
-            <button onclick="setTheme('dark')">Dark Mode</button>
-            <button onclick="setTheme('white')">Flashbang Mode</button>
+    <div class="theme-switch" id="themeSwitcher">
+        <button class="toggle" id="themeToggle" aria-expanded="false" type="button">Theme <span aria-hidden="true">&#9662;</span></button>
+        <div class="menu" id="themeMenu">
+            <label><input type="radio" name="colorScheme" value="classic" checked> Classic</label>
+            <label><input type="radio" name="colorScheme" value="ocean"> Ocean</label>
+            <label><input type="radio" name="colorScheme" value="matrix"> Matrix</label>
+            <label><input type="radio" name="colorScheme" value="amber"> Amber</label>
+            <label><input type="radio" name="colorScheme" value="flashbang"> Flashbang</label>
         </div>
-    </div> -->
+    </div>
 
 
     <script src="index.js"></script>
